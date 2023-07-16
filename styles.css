@@ -108,16 +108,19 @@ main {
     font-size: 2.5rem;
     font-weight: 700;
 }
-.features-info-title .text-features{
+
+.features-info-title .text-features {
     color: #FF900E;
     font-family: Work Sans;
     font-size: 2.5rem;
     font-weight: 700;
 }
-.features-info-title{
+
+.features-info-title {
     padding: 10px;
 }
-.features-info-description{
+
+.features-info-description {
     color: #727272;
     font-family: Work Sans;
     font-size: 1rem;
@@ -125,7 +128,59 @@ main {
     padding: 10px;
 }
 
+.fact-title {
+    color: #131313;
+    font-family: Work Sans;
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding-top: 100px;
+}
 
+.fact-description {
+    color: #727272;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 600px;
+}
+
+.card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    width: 100%;
+    padding: 25px;
+}
+
+.card-container {
+    display: flex;
+    justify-items: center;
+    gap: 60px;
+    padding: 20px;
+}
+
+.card img {
+    width: 40px;
+    padding: 2px;
+}
+
+.card-number {
+    color: #424242;
+    font-family: Work Sans;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 2px;
+}
+
+.card-title {
+    color:  #727272;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 2px;
+}
 
 
 
@@ -150,21 +205,38 @@ main {
         width: 100%;
         padding: 5px;
     }
-    main{
+
+    main {
         margin: 20px;
     }
+
     .features-section {
         flex-direction: column;
         gap: 20px;
     }
-    .features-img{
+
+    .features-img {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
-        
+
     }
-     
+    .card-container {
+     flex-direction: column;
+      
+    }
+    .fact-description{
+        width: 100%;
+       margin: 20px;
+    }
+    .card{
+        width: 200px;
+    }
+    .fact-title{
+        text-align: center;
+    }
     
+
 }
 
 /* media query for tablet or medium device */
@@ -172,18 +244,29 @@ main {
     header {
         padding: 10px 50px;
     }
+
     .features-section {
         flex-direction: column;
         gap: 20px;
     }
-    .features-img{
+
+    .features-img {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
-        
+
     }
-    main{
+
+    main {
         margin: 50px;
     }
-     
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+       
+     }
+   
+     .card{
+        width: 500px;
+     }
 }
